@@ -12,6 +12,8 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> defer</script>
 	<script src="./assets/maugallery.js"> defer</script>
 	<script src="./assets/scripts.js"> defer</script>
+	
+
 	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
 </head>
 <body>
@@ -80,7 +82,7 @@
 		./assets/images/nina/nina-200.webp 200w,
 		./assets/images/nina/nina-412.webp 412w,
 		./assets/images/nina/nina-502.webp 502w" 
-		src="./assets/images/nina/nina-1440.webp" alt="Nina, face à la caméra">
+		src="./assets/images/nina/" alt="Nina, face à la caméra">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -90,20 +92,140 @@
 	</div>
 </div>
 <div id="gallery">
-	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
-		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" width="240px" height ="240px" alt="concerts/aaron-paul" loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" width="240px" height ="240px" alt="entreprise/ali-morshedlou" loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" width="240px" height ="240px" alt="entreprise/jason-goodman" loading="lazy"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" width="240px" height ="240px" alt="mariage/hannah-busing" loading="lazy"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" width="240px" height ="240px" alt="portraits/ade-tunji" loading="lazy"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" width="240px" height ="240px" alt="mariage/jakob-owens" loading="lazy"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" width="240px" height ="240px" alt="portraits/nino-van" loading="lazy"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" width="240px" height ="240px" alt="concerts/austin-neill" loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" width="240px" height ="240px" alt="entreprise/mateus-campos" loading="lazy"/>
-		</div>
+	<h2 class="title">Portfolio</h2>
+	<div class="controls">
+		<button type="button" id="tousButton" class="selected" data-filter="tous">Tous</button>
+		<button type="button" data-filter="concert" class="">Concert</button>
+		<button type="button" data-filter="entreprises" class="">Entreprises</button>
+		<button type="button" data-filter="mariages" class="">Mariages</button>
+		<button type="button" data-filter="portrait" class="">Portrait</button>
 	</div>
+			<div id="lightgallery">
+			<a href="./assets/images/gallery/concerts/aaron-paul/1920.webp" 
+				class="gal-tile"
+				data-tag="concert" data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/concerts/aaron-paul/320.webp 320w,
+				./assets/images/gallery/concerts/aaron-paul/480.webp 480w,
+				./assets/images/gallery/concerts/aaron-paul/768.webp 768w,
+				./assets/images/gallery/concerts/aaron-paul/1024.webp 1024w,
+				./assets/images/gallery/concerts/aaron-paul/1440.webp 1440w,
+				./assets/images/gallery/concerts/aaron-paul/1920.webp 1920w" 
+				data-sub-html="<h4>Photo de - <a href='https://www.facebook.com/p/Aaron-Paul-Photography-100031887472537/' >Aaron-Paul </a></h4><p> Pancho Bazzara Tour 2022 </p>" 
+				data-lg-id="e093015f-6005-47cf-917d-aa7abfff13ad">
+				<img class="gal-tile" loading="lazy" src="./assets/images/gallery/concerts/aaron-paul/aaron-paul-wnX-fXzB6Cw-unsplash.webp" 
+       			 alt="Dans la foule enthousiaste lors de la tournée Pancho Bazzara">
+			</a>
+			<a href="./assets/images/gallery/entreprise/ali-morshedlou/1920.webp" 
+				data-tag="entreprises" 
+				data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/entreprise/ali-morshedlou/320.webp 320w,
+				./assets/images/gallery/entreprise/ali-morshedlou/480.webp 7800w,
+				./assets/images/gallery/entreprise/ali-morshedlou/768.webp 768w,
+				./assets/images/gallery/entreprise/ali-morshedlou/1024.webp 1024w,
+				./assets/images/gallery/entreprise/ali-morshedlou/1440.webp 1440w,
+				./assets/images/gallery/entreprise/ali-morshedlou/1920.webp 1920w" 
+				data-lg-id="301dc367-dcee-4609-a906-e8b0411dc08f">
+				<img class="gal-tile" loading="lazy" 
+				src="./assets/images/gallery/entreprise/ali-morshedlou/ali-morshedlou-WMD64tMfc4k-unsplash.webp" 
+				alt="Portrait d'un jeune homme d'affaire">
+			</a>
+			<a href="./assets/images/gallery/entreprise/jason-goodman/1920.webp"
+				data-tag="entreprises" 
+				data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/entreprise/jason-goodman/320.webp 320w,
+				./assets/images/gallery/entreprise/jason-goodman/480.webp 480w,
+				./assets/images/gallery/entreprise/jason-goodman/768.webp 768w,
+				./assets/images/gallery/entreprise/jason-goodman/1024.webp 1024w,
+				./assets/images/gallery/entreprise/jason-goodman/1440.webp 1440w,
+				./assets/images/gallery/entreprise/jason-goodman/1920.webp 1920w" 
+				data-lg-id="3263c2cf-50f5-405b-922e-b88b6b2e54dc" 
+				href="./assets/images/gallery/entreprise/jason-goodma/jason-goodman-tHO1_OuKbg0-unsplash.webp" 
+				style="display: block;">
+				<img class="gal-tile" loading="lazy" 
+				src="./assets/images/gallery/entreprise/jason-goodman/jason-goodman-tHO1_OuKbg0-unsplash.webp" 
+				alt="Rires au sein d'une réunion d'entreprise">
+			</a>
+
+
+			<a href="./assets/images/gallery/mariage/hannah-busing/1920.webp" 
+				data-tag="mariages" data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/mariage/hannah-busing/320.webp 320w,
+				./assets/images/gallery/mariage/hannah-busing/480.webp 480w,
+				./assets/images/gallery/mariage/hannah-busing/768.webp 768w,
+				./assets/images/gallery/mariage/hannah-busing/1024.webp 1024w,
+				./assets/images/gallery/mariage/hannah-busing/1440.webp 1044w,
+				./assets/images/gallery/mariage/hannah-busing/1920.webp 1920w" 
+				data-lg-id="3e3de3f7-f933-4eef-a60c-8c488894c704" 
+				style="display: block;">
+				<img class="gal-tile" loading="lazy" 
+				src="./assets/images/gallery/mariage/hannah-busing/hannah-busing-RvF2R_qMpRk-unsplash.webp" 
+				alt="Deux mains se touchent, symbolisant la tendresse et l'union">
+			</a>
+			
+			<a href="./assets/images/gallery/portraits/ade-tunji/1920.webp" 
+				data-tag="portrait" 
+				data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/portraits/ade-tunji/320.webp 320w,
+				./assets/images/gallery/portraits/ade-tunji/480.webp 480w,
+				./assets/images/gallery/portraits/ade-tunji/768.webp 768w,
+				./assets/images/gallery/portraits/ade-tunji/1024.webp 1024w,
+				./assets/images/gallery/portraits/ade-tunji/1440.webp 1440w,
+				./assets/images/gallery/portraits/ade-tunji/1920.webp 1920w" 
+				ata-lg-id="a4dd80c5-d9e8-49d5-8f84-bd20564ada71" style="display: block;">
+				<img class="gal-tile" loading="lazy" 
+				src="./assets/images/gallery/portraits/ade-tunji/ade-tunji-rVkhWWZFAtQ-unsplash.webp" 
+				alt="Portrait d'un homme avec aux yeux fermés">
+			</a>
+			<a href="./assets/images/gallery/mariage/jakob-owens/1920.webp"
+				data-tag="mariages" 
+				data-sizes="(max-width: 1920px) 100vw, 1920px" 
+				data-srcset="
+				./assets/images/gallery/mariage/jakob-owens/320.webp 320w,
+				./assets/images/gallery/mariage/jakob-owens/480.webp 480w,
+				./assets/images/gallery/mariage/jakob-owens/768.webp 768w,
+				./assets/images/gallery/mariage/jakob-owens/1024.webp 1024w,
+				./assets/images/gallery/mariage/jakob-owens/1440.webp 1440w,
+				./assets/images/gallery/mariage/jakob-owens/1920.webp 1920w" 
+				data-lg-id="f8e55bd8-6014-4cf9-b283-31508f52bc27" style="display: block;">
+				<img class="gal-tile" loading="lazy" 
+				src="./assets/images/gallery/mariage/jakob-owens/jakob-owens-SiniLJkXhMc-unsplash.webp" 
+				alt="Jeune couple marié, main dans la main, souriants">
+			</a>
+			<a href="./assets/images/gallery/concerts/austin-neill/1920.webp" 
+			data-tag="concert" data-sizes="(max-width: 1920px) 100vw, 1920px" 
+			data-srcset="
+			./assets/images/gallery/concerts/austin-neill/320.webp 320w,
+			./assets/images/gallery/concerts/austin-neill/480.webp 480w,
+			./assets/images/gallery/concerts/austin-neill/768.webp 768w,
+			./assets/images/gallery/concerts/austin-neill/1024.webp 1024w,
+			./assets/images/gallery/concerts/austin-neill/1440.webp 1440w,
+			./assets/images/gallery/concerts/austin-neill/1920.webp 1920w" 
+			ata-lg-id="85832fbe-4759-4b04-9d4a-312e3bc8ec4b">
+			<img class="gal-tile" loading="lazy" 
+			src="./assets/images/gallery/concerts/austin-neill/austin-neill-hgO1wFPXl3I-unsplash.webp" 
+			alt="Tunde Adebimpe du groupe de rock 'TV on the Radio' sur scene">
+		</a>
+		<a href="./assets/images/gallery/entreprise/mateus-campos/1920.webp" 
+		data-tag="entreprises" data-sizes="(max-width: 1920px) 100vw, 1920px" 
+		data-srcset="
+			./assets/images/gallery/entreprise/mateus-campos/320.webp 320w,
+			./assets/images/gallery/entreprise/mateus-campos/480.webp 480w,
+			./assets/images/gallery/entreprise/mateus-campos/768.webp 768w,
+			./assets/images/gallery/entreprise/mateus-campos/1024.webp 1024w,
+			./assets/images/gallery/entreprise/mateus-campos/1440.webp 1440w,
+			./assets/images/gallery/entreprise/mateus-campos/1920.webp 1920w" 
+			data-lg-id="02d86f9b-c84b-4ad1-b21f-7eae2a0b5eec" style="display: block;">
+			<img class="gal-tile" loading="lazy" 
+			src="./assets/images/gallery/entreprise/mateus-campos/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" 
+			alt="De la bonne humeur au travail devant son ordinateur">
+		</a>
+			</div>
+		</div>
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -179,21 +301,3 @@
 </div>
 </body>
 </html>
-<a href="./assets/images/gallery/concerts/aaron-paul/1920.webp" data-tag="concert" data-sizes="(max-width: 1920px) 100vw, 1920px" data-srcset="
-			./assets/images/gallery/concerts/aaron-paul/200.webp 200w,
-			./assets/images/gallery/concerts/aaron-paul/384.webp 384w,
-			./assets/images/gallery/concerts/aaron-paul/496.webp 496w,
-			./assets/images/gallery/concerts/aaron-paul/627.webp 627w,
-			./assets/images/gallery/concerts/aaron-paul/760.webp 760w,
-			./assets/images/gallery/concerts/aaron-paul/898.webp 898w,
-			./assets/images/gallery/concerts/aaron-paul/1034.webp 1034w,
-			./assets/images/gallery/concerts/aaron-paul/1154.webp 1154w,
-			./assets/images/gallery/concerts/aaron-paul/1256.webp 1256w,
-			./assets/images/gallery/concerts/aaron-paul/1189.webp 1189w,
-			./assets/images/gallery/concerts/aaron-paul/1631.webp 1631w,
-			./assets/images/gallery/concerts/aaron-paul/1689.webp 1689w,
-			./assets/images/gallery/concerts/aaron-paul/1806.webp 1806w,
-			./assets/images/gallery/concerts/aaron-paul/1916.webp 1916w,
-			./assets/images/gallery/concerts/aaron-paul/1920.webp 1920w" data-sub-html="<h4>Photo de - <a href='https://www.facebook.com/p/Aaron-Paul-Photography-100031887472537/' >Aaron-Paul </a></h4><p> Pancho Bazzara Tour 2022 </p>" data-lg-id="e093015f-6005-47cf-917d-aa7abfff13ad">
-			<img class="gal-tile" loading="lazy" src="./assets/images/gallery/concerts/aaron-paul/thumb.webp" alt="Dans la foule enthousiaste lors de la tournée Pancho Bazzara">
-		</a>
