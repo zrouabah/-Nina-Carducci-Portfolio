@@ -97,7 +97,6 @@ body {
 }
 #lightgallery{
   display: flex;
-  flex-direction: column;
   flex-flow: row wrap;
   justify-content: center;
   gap: 10px 15px;
@@ -163,7 +162,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-@media (min-width: 576px) {
+@media (min-width: 575px) {
 	.gal-tile
   {
 	  width: 575px;
@@ -177,6 +176,36 @@ body {
 	  height: 240px;
 	}
 }
+@media (min-width: 767px) {
+	.gal-tile
+  {
+	  width: 270px;
+	  height: 270px;
+	}
+}
+@media (min-width: 1199px) {
+	.gal-tile
+  {
+	  width: 320px;
+	  height: 320px;
+	}
+}
+@media (min-width:1399px) {
+	.gal-tile
+  {
+	  width: 380px;
+	  height: 380px;
+	}
+}
+@media (min-width: 1414px) {
+	.gal-tile
+  {
+	  width: 440px;
+	  height: 440px;
+	}
+}
+
+
 
 .mg-prev, .mg-next {
 	width: 30px;
