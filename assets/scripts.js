@@ -20,31 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const galPictures = document.querySelectorAll('#gallery a');
     const tousButton = document.getElementById('tousButton');
     let selectedButton = tousButton;
-  
+
     galButtons.forEach((button) => {
-      button.addEventListener('mouseup', () => {
-        const filter = button.getAttribute('data-filter');
-  
-        if (selectedButton) {
-          selectedButton.classList.remove('selected');
-        }
-  
-        button.classList.add('selected');
-        selectedButton = button;
-  
-        galPictures.forEach((picture) => {
-          const pictAttr = picture.getAttribute('data-tag');
-          if (filter === 'Tous' || pictAttr === filter) {
-            picture.style.display = 'block';
-          } else {
-            picture.style.display = 'none';
-          }
+        button.addEventListener('mouseup', () => {
+            const filter = button.getAttribute('data-filter');
+
+            if (selectedButton) {
+                selectedButton.classList.remove('selected');
+            }
+
+            button.classList.add('selected');
+            selectedButton = button;
+
+            galPictures.forEach((picture) => {
+                const pictAttr = picture.getAttribute('data-tag');
+                if (filter === 'tous' || pictAttr === filter) {
+                    picture.style.display = 'block';
+                } else {
+                    picture.style.display = 'none';
+                }
+            });
         });
-  
-        console.log(`Filter applied: ${filter}`);
-      });
     });
-  
-    console.log('Script JS loaded and executed.');
-  });
-  
+});
