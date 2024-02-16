@@ -39,18 +39,22 @@
 		portraits & événements. Créateur de souvenirs uniques. Portfolio & services photo.">
 
 
-	<link rel="stylesheet" href="./assets/bootstrap/styles-critiques.css" >
-	<link rel="stylesheet" href="./assets/style.css" >
+	
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	<script  src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script defer src="./assets/swiper/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" media="screen">
+
+	<link defer rel="stylesheet" href="./assets/css/style.min.css">
 
 	<!-- lightgallery -->
 	<script src="./assets/lightgallery/lightgallery.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="./assets/lightgallery/css/lightgallery.min.css" media="screen">
-	<script  src="./assets/scripts.js"> </script>
+	<script defer type="module" src="./assets/js/scripts.prod.js"></script>
+	<script  src="./assets/js/script-min.js"> </script>
 	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
 </head>
 <body>
@@ -67,51 +71,41 @@
 	</div>
 </div>
 <div id="header">
-
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img sizes="100vw" srcset="
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-412.webp 412w,
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w" 
-				src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
-				alt="Femme d'affaires en costume noir traverse un très large passage clouté">
-			</div>
-			<div class="carousel-item">
-				<img sizes="100vw" srcset="
-					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
-					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-412.webp 412w,
-					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
-					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp 1920w" 
-				src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" 
-				alt="public dans un concert chantant et criant">
-			</div>
-			<div class="carousel-item">
-				<img sizes="100vw" srcset="
-					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
-					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-412.webp 412w,
-					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w,
-					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp 1920w" 
-				src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp" 
-				alt="Couple de jeune marié dansant devant une foule conquise">
-			</div>
-		
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
+    <div class="swiper">
+        <div class="swiper-wrapper" id="lg-swipper">
+            <a href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp" class="swiper-slide">
+                <img sizes="100vw" srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-412.webp 412w,
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w" 
+                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
+                alt="Femme d'affaires en costume noir traverse un très large passage clouté">
+            </a>
+            <a href="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp" class="swiper-slide">
+                <img sizes="100vw" srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-412.webp 412w,
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp 1920w" 
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" 
+                alt="public dans un concert chantant et criant">
+            </a>
+            <a href="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp" class="swiper-slide">
+                <img sizes="100vw" srcset="
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-412.webp 412w,
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w,
+                    ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp 1920w" 
+                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp" 
+                alt="Couple de jeune marié dansant devant une foule conquise">
+            </a>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </div>
+
 <div id="about">
 	<div class="picture left">
 		<img sizes="(min-width: 200px) 100vw, (max-width: 502px) 90vw, 502px" 
