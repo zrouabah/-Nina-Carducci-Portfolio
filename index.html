@@ -45,10 +45,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/maugallery.js"> </script>
-	<script defer src="./assets/scripts.js"> </script>
+	<script  src="./assets/bootstrap/bootstrap.bundle.js"></script>
+
+	<!-- lightgallery -->
+	<script src="./assets/lightgallery/lightgallery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="./assets/lightgallery/css/lightgallery.min.css" media="screen">
+	<script  src="./assets/scripts.js"> </script>
 	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
 </head>
 <body>
@@ -129,7 +131,7 @@
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="controls">
-		<button type="button" id="tousButton" class="selected" data-filter="Tous">Tous</button>
+		<button type="button" id="tousButton" class="selected" data-filter="tous">Tous</button>
 		<button type="button" data-filter="concert" class="">Concert</button>
 		<button type="button" data-filter="entreprises" class="">Entreprises</button>
 		<button type="button" data-filter="mariages" class="">Mariages</button>
