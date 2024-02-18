@@ -43,13 +43,13 @@
 		<script defer src="./assets/swiper/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" media="screen">
 		
-		<link rel="stylesheet" href="./assets/css/style.min.css">
+		<link rel="stylesheet" href="./assets/css/style.min.css"  media="screen">
 	
 		<!-- lightgallery -->
-		<script src="./assets/lightgallery/lightgallery.min.js"></script>
+		<script defer src="./assets/lightgallery/lightgallery.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="./assets/lightgallery/css/lightgallery.min.css" media="screen">
-		<script type="module" src="./assets/js/scripts.prod.js"></script>
-		<script  src="./assets/js/script-min.js"> </script>
+		<script defer type="module" src="./assets/js/scripts.prod.js"></script>
+		<script defer src="./assets/js/script-min.js"> </script>
 		<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
 	
 		<!-- La balise title est déplacée à l'intérieur de la balise head -->
@@ -57,8 +57,8 @@
 	</head>
 <body>
 <div class="top-header">
-	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">   
+	<h1 class="nom">Nina Carducci</h1>
+	<div class="nav"[]>   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -71,8 +71,10 @@
 <div id="header">
     <div class="swiper">
         <div class="swiper-wrapper" id="lg-swipper">
-            <a href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp" class="swiper-slide">
-                <img sizes="100vw" srcset="
+            <a href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp" 
+				class="swiper-slide">
+                <img sizes="100vw" 
+					srcset="
                     ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
                     ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-412.webp 412w,
                     ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w" 
