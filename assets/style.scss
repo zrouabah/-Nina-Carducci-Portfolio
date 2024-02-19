@@ -446,10 +446,6 @@ div.price {
 		flex-direction: column;
 	}
 	
-	.picture {
-		// width: 418px;
-		// width: 50%;
-	}
 
 	.picture.left::before {
 		width: 100%;
@@ -517,9 +513,7 @@ div.price {
 		padding-block: 1em;
 		text-align: center;
 	}
-	.picture.left::before, .picture.right::before {
-		// height: 150px;
-	}
+	
 	#services .container {
 		align-items: center;
 	}
@@ -533,7 +527,5 @@ div.price {
 	form {
 		width: 100%;
 	}
-	.picture {
-		// width: 80%;
-	}
+	
 }
