@@ -113,22 +113,12 @@
 
 <div id="about">
 	<div class="picture left">
-		<picture>
-		  <source
-			srcset="./assets/images/gallery-mobile/nina-mobile.webp"
-			media="(max-width: 480px)"
-			width="480"
-			height="440"
-		  />
-		  <img
-			src="./assets/images/nina.webp"
-			alt="photo-profile-nina"
-			title="Nina Carducci"
-			width="545"
-		  />
-		  <!-- aspect ratio to control -->
-		</picture>
-	  </div>
+		<img sizes="50vw" srcset="./assets/images/nina-min.webp 1920w,
+			./assets/images/nina-min-m.webp 1024w,
+			./assets/images/nina-min-s.webp 640w" 
+			src="./assets/images/nina-min.webp" 
+			alt="Portrait de Nina Carducci">
+	</div>
 	
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
